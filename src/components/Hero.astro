@@ -1,0 +1,20 @@
+---
+import Image from 'astro/components/Image.astro'
+import image1 from '../images/slide-2.jpg'
+import Button from '../utility/Button.astro'
+---
+
+<main >
+    <div class="hero-image relative">
+        <Image src={image1} class="h-[599px]" alt={"Hero Image"} />
+        <div class="absolute flex text-right flex-col items-end top-[50%] w-[40%] translate-y-[-50%] right-[5%] gap-4">
+            <p class="text-lg text-slate-800 font-bold  tracking-widest ">
+                Look Salon Located in LA
+              </p>
+              <h1 class="text-8xl font-medium font-serif">Full-Service</h1>
+              <p class="text-base font-medium text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate suscipit labore eius dolorem enim id. Odio error fugit atque harum praesentium ipsum. Consequuntur, velit quo neque explicabo pariatur voluptates expedita!</p>
+              <Button title="View Services" />
+        </div>
+    </div>
+   
+</main>
